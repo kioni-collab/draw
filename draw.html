@@ -1,0 +1,141 @@
+<html>
+<style>
+.contain{
+padding: 10px 0;
+background-color: #F0EAD6;
+} 
+.canvas{
+padding: 500px 0;
+background: white;
+background-repeat:no-repeat;
+background-size:100%100%;
+border: 3px solid black;
+}
+.dot {
+                border-radius: 5px;
+                background: black;
+                position: absolute;
+                width: 10px;
+                height: 10px;
+            }
+</style>
+<body>
+<div class="contain">
+<form id = "Tool">
+<label> Background-colors
+<select id="back-ground">
+				<option value="white">White</option>
+                <option value="black">Black</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+				<option value= "violet1.png"> Violet1</option>
+            </select>
+</label>
+<label>pixel size
+        <input id="pixel" type="number">
+        </label>
+ <button type="submit">Save changes</button>
+
+<img id= "black" src="black.png"width="30px" height="30px">
+<img id = "red" src="red.png"width="30px" height="30px">
+<img id = "green" src="green.png"width="30px" height="30px">
+<img id = "blue" src="blue.png"width="30px" height="30px">
+<label> Stamp
+<select id="stamp">
+                <option value="none">none</option>
+				<option value= "dina1.png"> Dina1</option>
+            </select>
+</label>
+<button type="submit">Save changes</button>
+</form>
+</div>
+<div class ="canvas" id = "canvas">
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+</script>
+<script>
+var color = "black"
+$("#green").on("click", function(event){
+color = "green";
+
+});
+$("#black").on("click", function(event){
+color = "black";
+
+});
+$("#red").on("click", function(event){
+color = "red";
+
+});
+$("#blue").on("click", function(event){
+color = "blue";
+
+});
+var pixel = 50;
+var stamp = "none"
+$("#Tool").on("submit", function(event) {
+        event.preventDefault();
+        var $backG = $("#back-ground");
+		var $pixel = $("#pixel");
+		var $Stamp = $("#stamp");
+		var back = $backG.val();
+		pixel = $pixel.val();
+		stamp = $Stamp.val();
+		if(back == "violet1.png"){
+		$("#canvas").css('background-image', 'url('+back+')');
+		$("#canvas").css('background-size', '100%100%');
+		}
+		$("#canvas").css("background", back);
+    });
+	
+     var Clicknumber =0;
+    $("#canvas").on("click", function(event) {
+        Clicknumber += 1;
+        $("#canvas").on("mousemove", function(event){
+		if(stamp == "none"){
+            if(Clicknumber % 2 == 0){
+        var $dot = $("<div ></div>");
+		$dot.attr('id', 'canvas');
+        $dot.addClass("dot");
+        $dot.appendTo("body");
+        $dot.css("top", event.pageY + "px");
+         $dot.css("left", event.pageX + "px");
+		 $dot.css("background", color)
+		 $dot.css("width", pixel +"px");
+		 $dot.css("height", pixel +"px");
+        }
+            else{
+                event.stopPropagation();
+  
+        } 
+		
+		}
+		else{
+		if(Clicknumber % 2 == 0){
+		var $img = $("<img>")
+                .attr("src", stamp)
+                .width(100)
+                .css("position", "absolute")
+                .css("top", (event.pageY+ 5))
+                .css("left", (event.pageX +5) )
+                .appendTo("body");
+				}
+		else{
+			event.stopPropagation();
+		}
+        
+		
+		
+		}
+        });
+		
+         
+    });
+    
+
+    </script>
+
+</body>
+
+</html>

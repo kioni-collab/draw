@@ -1,0 +1,134 @@
+<html>
+<head>
+<style>
+.center { padding: 250px 0; text-align: center;} 
+.boarder{background-color:#f8f8ff;  padding: 10px ; font-size: 100%; margin: auto;  width: 20%;}
+audio { display:none;}
+</style>
+</head> 
+<body>
+<div class = "center">
+<div class = "boarder">
+<h2>
+</h2>
+<p>
+ 
+</p>
+<button id="clicker">Boring button</button>
+<audio controls  id = "music">
+  <source src="hayloft.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+</div>
+</div> 
+</body>
+<script>
+ var clickerButton = document.getElementById("clicker");
+ var muscc = document.getElementById("music");
+ var backGround = document.getElementsByTagName("head");
+ var textBios = document.getElementsByTagName("p");
+ var CharName = document.getElementsByTagName("h2");
+ var imagepicker = function(){
+ var NumRepeat = Math.floor(Math.random() * 8) +1 ;
+ var NimBer = Math.floor(Math.random() * 10);
+ if(NimBer == 0 ){
+		backGround[0].innerHTML = "<style> body{background-image: url('dina1.png');}body{background-repeat;} body{background-size:" + (12.5 *NumRepeat) +"%"+(12.5 *NumRepeat) +"%;} .center { padding: 250px 0; text-align: center;} .boarder{background-color:#F0EAD6;  padding: 10px ; font-size: 100%; margin: auto;  width: 20%;} audio { display:none;}</style>";
+		CharName[0].innerHTML = "Dina";
+		if(Math.floor(Math.random() * 2) == 0){
+		textBios[0].innerHTML = "She/they too! She's femme enby \n She's a huge foodie (culinary student too) and also loves swimming as a hobby and sport! She loves pastel goth fashion! She's a pretty funny/silly person with some mischievous qualities, enjoys doing stuff for others, kinda a a silly/horny type flirt lmao";
+		}else{ 
+		textBios[0].innerHTML = "@spiceitorleaveit 19 | She/They | Polyam Sapphic Foodie & Cook | Swimmer Pastel goth hornball, spice slut, and lover of cute things ready to kick ass and give out hugs 	&hearts;";
+		}
+ }
+  if(NimBer == 1 ){
+		backGround[0].innerHTML = "<style> body{background-image: url('dina2.png');}body{background-repeat;} body{background-size:" + (12.5 *NumRepeat) +"%"+(12.5 *NumRepeat) +"%;} .center { padding: 250px 0; text-align: center;} .boarder{background-color:#F0EAD6;  padding: 10px ; font-size: 100%; margin: auto;  width: 20%;} audio { display:none;}</style>";
+		CharName[0].innerHTML = "Dina";
+		if(Math.floor(Math.random() * 2) == 0){
+		textBios[0].innerHTML = "She/they too! She's femme enby \n She's a huge foodie (culinary student too) and also loves swimming as a hobby and sport! She loves pastel goth fashion! She's a pretty funny/silly person with some mischievous qualities, enjoys doing stuff for others, kinda a a silly/horny type flirt lmao";
+		}else{ 
+		textBios[0].innerHTML = "@spiceitorleaveit 19 | She/They | Polyam Sapphic Foodie & Cook | Swimmer Pastel goth hornball, spice slut, and lover of cute things ready to kick ass and give out hugs 	&hearts;";
+		}
+ }
+  if(NimBer == 2 ){
+		backGround[0].innerHTML = "<style> body{background-image: url('kai1.png');}body{background-repeat;} body{background-size:" + (12.5 *NumRepeat) +"%"+(12.5 *NumRepeat) +"%;} .center { padding: 250px 0; text-align: center;} .boarder{background-color:#F0EAD6;  padding: 10px ; font-size: 100%; margin: auto;  width: 20%;} audio { display:none;}</style>";
+		CharName[0].innerHTML = "Kai";
+		if(Math.floor(Math.random() * 2) == 0){
+		textBios[0].innerHTML = "They/She Femme &hearts; Neurodivergent &hearts; Indigenous &hearts; Artist \n  Switch &hearts; Poly &hearts; Looking for dating and friends (around my age)!";
+		}else{ 
+		textBios[0].innerHTML = "am a funky little baby";
+ }
+ }
+   if(NimBer == 3 ){
+		backGround[0].innerHTML = "<style> body{background-image: url('kai2.png');}body{background-repeat;} body{background-size:" + (12.5 *NumRepeat) +"%"+(12.5 *NumRepeat) +"%;} .center { padding: 250px 0; text-align: center;} .boarder{background-color:#F0EAD6;  padding: 10px ; font-size: 100%; margin: auto;  width: 20%;} audio { display:none;}</style>";
+		CharName[0].innerHTML = "Kai";
+		if(Math.floor(Math.random() * 2) == 0){
+		textBios[0].innerHTML = "They/She Femme &hearts; Neurodivergent &hearts; Indigenous &hearts; Artist \n  Switch &hearts; Poly &hearts; Looking for dating and friends (around my age)!";
+		}else{ 
+		textBios[0].innerHTML = "am a funky little baby";
+ }
+ }
+   if(NimBer == 4 ){
+		backGround[0].innerHTML = "<style> body{background-image: url('knox.png');}body{background-repeat;} body{background-size:" + (12.5 *NumRepeat) +"%"+(12.5 *NumRepeat) +"%;} .center { padding: 250px 0; text-align: center;} .boarder{background-color:#F0EAD6;  padding: 10px ; font-size: 100%; margin: auto;  width: 20%;} audio { display:none;}</style>";
+		CharName[0].innerHTML = "Knox";
+		if(Math.floor(Math.random() * 2) == 0){
+		textBios[0].innerHTML = "Knox Bow is a Black American tattoo artist and social activist in the punk scene living in Tacoma, Washington with his polyamorous quintet: Violet, Lavender, Dina, and Lillian. . . . WIP";
+		}else{ 
+		textBios[0].innerHTML = "He is chaotic and has good music taste!! Big chaotic good energy! He's a very bold, passionate person too. Little bit of a perv lmao. He's not afraid to stand up for himself. He's also just a really fun person, likes to vibe";
+ }
+ }
+ if(NimBer == 5 ){
+		backGround[0].innerHTML = "<style> body{background-image: url('knox2.png');}body{background-repeat;} body{background-size:" + (12.5 *NumRepeat) +"%"+(12.5 *NumRepeat) +"%;} .center { padding: 250px 0; text-align: center;} .boarder{background-color:#F0EAD6;  padding: 10px ; font-size: 100%; margin: auto;  width: 20%;} audio { display:none;}</style>";
+		CharName[0].innerHTML = "Knox";
+		if(Math.floor(Math.random() * 2) == 0){
+		textBios[0].innerHTML = "Knox Bow is a Black American tattoo artist and social activist in the punk scene living in Tacoma, Washington with his polyamorous quintet: Violet, Lavender, Dina, and Lillian. . . . WIP";
+		}else{ 
+		textBios[0].innerHTML = "He is chaotic and has good music taste!! Big chaotic good energy! He's a very bold, passionate person too. Little bit of a perv lmao. He's not afraid to stand up for himself. He's also just a really fun person, likes to vibe";
+ }
+ }
+  if(NimBer == 6 ){
+		backGround[0].innerHTML = "<style> body{background-image: url('me1.png');}body{background-repeat;} body{background-size:" + (12.5 *NumRepeat) +"%"+(12.5 *NumRepeat) +"%;} .center { padding: 250px 0; text-align: center;} .boarder{background-color:#F0EAD6;  padding: 10px ; font-size: 100%; margin: auto;  width: 20%;} audio { display:none;}</style>";
+		CharName[0].innerHTML = "Kioni";
+		if(Math.floor(Math.random() * 2) == 0){
+		textBios[0].innerHTML = " trans black girl and stuff ";
+		}else{ 
+		textBios[0].innerHTML = "Queen Katarina 👑 \n Finally out the closet and existing  \n Name: Kioni-Katarina \n Pronouns: she/they \n Gender: lesbian vampire 🧛🏾‍♀️  \n Sexuality: apparently I'm a bottom now 🤷🏾‍♀️";
+ }
+ }
+ if(NimBer == 7 ){
+		backGround[0].innerHTML = "<style> body{background-image: url('me2.png');}body{background-repeat;} body{background-size:" + (12.5 *NumRepeat) +"%"+(12.5 *NumRepeat) +"%;} .center { padding: 250px 0; text-align: center;} .boarder{background-color:#F0EAD6;  padding: 10px ; font-size: 100%; margin: auto;  width: 20%;} audio { display:none;} </style>";
+		CharName[0].innerHTML = "Kioni";
+		if(Math.floor(Math.random() * 2) == 0){
+		textBios[0].innerHTML = " trans black girl and stuff ";
+		}else{ 
+		textBios[0].innerHTML = "Queen Katarina 👑 \n Finally out the closet and existing  \n Name: Kioni-Katarina \n Pronouns: she/they \n Gender: lesbian vampire 🧛🏾‍♀️  \n Sexuality: apparently I'm a bottom now 🤷🏾‍♀️";
+ }
+ }
+ if(NimBer == 8 ){
+		backGround[0].innerHTML = "<style> body{background-image: url('violet1.png');}body{background-repeat;} body{background-size:" + (12.5 *NumRepeat) +"%"+(12.5 *NumRepeat) +"%;} .center { padding: 250px 0; text-align: center;} .boarder{background-color:#F0EAD6;  padding: 10px ; font-size: 100%; margin: auto;  width: 20%;} audio { display:none;}</style>";
+		CharName[0].innerHTML = "Violet";
+		if(Math.floor(Math.random() * 2) == 0){
+		textBios[0].innerHTML = " They/she for violet! She's butch >:)Oh and she's a dog person! Not all picrews have the best pointy dog ear styles so! I like the style where the dog ears are where human ears go tho >:)";
+		}else{ 
+		textBios[0].innerHTML = "@ violentlyviolet 16 | She/They | Butch \n Your local skateboarding lesbian with a penchant for     troublemaking ✌️";
+ }
+ }
+ if(NimBer == 9 ){
+		backGround[0].innerHTML = "<style> body{background-image: url('violet2.png');}body{background-repeat;} body{background-size:" + (12.5 *NumRepeat) +"%"+(12.5 *NumRepeat) +"%;} .center { padding: 250px 0; text-align: center;} .boarder{background-color:#F0EAD6;  padding: 10px ; font-size: 100%; margin: auto;  width: 20%;} audio { display:none;} </style>";
+		CharName[0].innerHTML = "Violet";
+		if(Math.floor(Math.random() * 2) == 0){
+		textBios[0].innerHTML = " They/she for violet! She's butch >:)Oh and she's a dog person! Not all picrews have the best pointy dog ear styles so! I like the style where the dog ears are where human ears go tho >:)";
+		}else{ 
+		textBios[0].innerHTML = "@ violentlyviolet 16 | She/They | Butch \n Your local skateboarding lesbian with a penchant for     troublemaking ✌️";
+ }
+ }
+ };
+ var onButtonClick = function() {
+		muscc.play();
+	   clickerButton.textContent = "Awesome art button";
+       imagepicker();
+	   
+    };
+clickerButton.addEventListener("click", onButtonClick);
+</script>
+</html>
